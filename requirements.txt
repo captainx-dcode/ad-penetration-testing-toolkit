@@ -1,0 +1,13 @@
+# Core dependencies for AD Penetration Testing Toolkit
+
+# Network packet manipulation
+scapy==2.6.0
+
+# NTLM and SMB protocols
+impacket==0.12.0
+
+# Terminal colors
+colorama==0.4.6
+
+# Optional: For better Windows compatibility
+pypcap==1.2.3

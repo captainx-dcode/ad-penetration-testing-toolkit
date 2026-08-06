@@ -216,3 +216,32 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Scapy captured files
+*.pcap
+*.pcapng
+
+# Captured hashes
+hashes.txt
+hospital_hashes.txt
+*.hash
+hashes/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/
+
+# CodeGrade
+*.codegrade
