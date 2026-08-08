@@ -1,13 +1,63 @@
 # Core dependencies for AD Penetration Testing Toolkit
+# Supports both Part 1 (LLMNR/NBT-NS) and Part 2 (Mimikatz Automation)
 
-# Network packet manipulation
+# ============================================================================
+# PART 1: LLMNR/NBT-NS Poisoning Tools
+# ============================================================================
+
+# Network packet manipulation - Required for ad_poisoning.py and NBT_final.py
 scapy==2.6.0
 
-# NTLM and SMB protocols
+# NTLM and SMB protocols - For advanced hash handling
 impacket==0.12.0
 
-# Terminal colors
+# Terminal colors - For better output formatting
 colorama==0.4.6
 
-# Optional: For better Windows compatibility
+# Windows packet capture - Optional but recommended for Windows users
 pypcap==1.2.3
+
+
+# ============================================================================
+# PART 2: Mimikatz Automation Tools
+# ============================================================================
+
+# Note: Mimikatz automation uses only Python standard libraries:
+# - os (built-in)
+# - subprocess (built-in)
+# - sys (built-in)
+# - datetime (built-in)
+#
+# No additional external packages are required for Part 2.
+# The script uses Python's built-in modules only.
+
+
+# ============================================================================
+# FUTURE TOOLS (Planned)
+# ============================================================================
+
+# SMB Relay Attacks (Coming Soon)
+# - impacket already included above
+
+# IPv6 Attacks (Coming Soon)
+# - scapy already included above
+
+# Kerberoasting (Coming Soon)
+# - impacket already included above
+
+# BloodHound Integration (Coming Soon)
+# - neo4j (for database connection)
+# - requests (for API calls)
+# Uncomment when needed:
+# neo4j==5.14.0
+# requests==2.31.0
+
+
+# ============================================================================
+# DEVELOPMENT TOOLS (Optional)
+# ============================================================================
+
+# For code formatting and linting (optional, for contributors)
+# black==23.11.0
+# flake8==6.1.0
+# pylint==3.0.2
