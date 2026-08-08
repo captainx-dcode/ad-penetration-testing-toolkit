@@ -1,4 +1,4 @@
-# 🛡️ Active Directory Penetration Testing Toolkit
+# Active Directory Penetration Testing Toolkit
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.6+](https://img.shields.io/badge/python-3.6+-blue.svg)](https://www.python.org/downloads/)
@@ -6,22 +6,22 @@
 
 ---
 
-## 📌 Overview
+## Overview
 
 **Active Directory Penetration Testing Toolkit** is a comprehensive collection of Python scripts and documentation for simulating and understanding common **Active Directory attack vectors**. Each tool is designed for **educational purposes** and **authorized security testing** in controlled environments.
 
 ---
 
-## ⚠️ IMPORTANT: Ethical Use
+## IMPORTANT: Ethical Use
 
 This toolkit is for **educational and authorized security testing only**.
 
-### ✅ You Should
+### You Should
 
 * **DO** use in your own lab environments.
 * **DO** use with explicit written permission.
 
-### ❌ You Should Not
+### You Should Not
 
 * **DO NOT** use on production systems without authorization.
 * **DO NOT** use for malicious purposes.
@@ -30,7 +30,7 @@ This toolkit is for **educational and authorized security testing only**.
 
 ---
 
-## 🗂️ Tool Suite
+## Tool Suite
 
 ### Current Tools
 
@@ -52,7 +52,7 @@ This toolkit is for **educational and authorized security testing only**.
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Installation
 
@@ -88,24 +88,34 @@ sudo python3 NBT_final.py
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 ad-penetration-testing-toolkit/
-├── README.md                          # Master overview
-├── LICENSE                            # MIT License
-├── requirements.txt                   # All dependencies
+│
+├── README.md                          # Updated with both tools
+├── LICENSE
+├── requirements.txt
 ├── .gitignore
 │
-├── tools/                             # All attack tools
-│   └── 01-llmnr-nbtns-poison/
-│       ├── README.md                  # Tool-specific documentation
+├── tools/
+│   │
+│   ├── 01-llmnr-nbtns-poison/        # Part 1 (Complete)
+│   │   ├── README.md
+│   │   ├── src/
+│   │   │   ├── ad_poisoning.py
+│   │   │   └── NBT_final.py
+│   │   └── docs/
+│   │       ├── attack_explanation.md
+│   │       └── mitigation_guide.md
+│   │
+│   └── 02-mimikatz-automation/       # Part 2 (Coming Soon)
+│       ├── README.md
 │       ├── src/
-│       │   ├── ad_poisoning.py        # Technical Lesson script
-│       │   └── NBT_final.py           # Lab script (CodeGrade)
+│       │   └── mimikatz_automation.py  # Your new script
 │       └── docs/
-│           ├── attack_explanation.md
-│           └── mitigation_guide.md
+│           ├── mimikatz_explanation.md
+│           └── mimikatz_mitigation.md
 │
 ├── docs/                              # Global documentation
 │   ├── active-directory-overview.md
@@ -118,7 +128,7 @@ ad-penetration-testing-toolkit/
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
 ### LLMNR/NBT-NS Poisoning Attack Flow
 
@@ -144,7 +154,7 @@ ad-penetration-testing-toolkit/
 
 ---
 
-## 📚 Documentation
+## Documentation
 
 * **Active Directory Overview**
 * **Attack Methodology**
@@ -153,7 +163,7 @@ ad-penetration-testing-toolkit/
 
 ---
 
-## 🎯 Learning Outcomes
+## Learning Outcomes
 
 By using this toolkit, you will:
 
@@ -164,7 +174,7 @@ By using this toolkit, you will:
 
 ---
 
-## 🔮 Future Development
+## Future Development
 
 This toolkit is actively maintained and will include:
 
@@ -178,7 +188,7 @@ This toolkit is actively maintained and will include:
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome!
 
@@ -196,7 +206,7 @@ git checkout -b feature/amazing-tool
 
 ---
 
-## 📄 Project Files
+## Project Files
 
 The repository includes the following supporting files:
 
@@ -206,13 +216,13 @@ The repository includes the following supporting files:
 
 ---
 
-## 📝 License
+## License
 
 Distributed under the **MIT License**. See the **LICENSE** file for more information.
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome!
 
@@ -229,7 +239,7 @@ git checkout -b feature/amazing-tool
 
 ---
 
-## 🛡️ Disclaimer
+## Disclaimer
 
 This toolkit is intended **strictly for educational purposes and authorized security testing** in controlled environments.
 
@@ -237,7 +247,7 @@ Never execute these techniques against systems without explicit written authoriz
 
 ---
 
-> **🛡️ Security is a journey, not a destination. Use this toolkit responsibly.**
+> **Security is a journey, not a destination. Use this toolkit responsibly.**
 
 
 **Commit:**
